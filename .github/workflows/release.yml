@@ -1,0 +1,25 @@
+name: release
+on:
+  push:
+    branches: [upload]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: upload
+      - name: assemble and publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          VER=$(cat VERSION)
+          mkdir out
+          for f in $(ls parts | sed 's/\.part[0-9]*$//' | sort -u); do cat parts/$f.part* > out/$f; done
+          cp extra/* out/ 2>/dev/null || true
+          ls -la out
+          gh release delete "v$VER" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "v$VER" out/* --title "העולם הישראלי $VER" --notes "גרסה $VER" --latest
