@@ -1,8 +1,8 @@
-version: 1.0.39
+version: 1.0.40
 files:
-  - url: HaolamHaisraeli-Setup-1.0.39.exe
-    sha512: dmav+tN60GO5w758Gn20218Lp5cTZRAmoxS9yS2xpR2hlbwM6KE007r/hxoK3N/qktvZBWX+Q6Itd9ZhzK6jxA==
-    size: 113886394
-path: HaolamHaisraeli-Setup-1.0.39.exe
-sha512: dmav+tN60GO5w758Gn20218Lp5cTZRAmoxS9yS2xpR2hlbwM6KE007r/hxoK3N/qktvZBWX+Q6Itd9ZhzK6jxA==
-releaseDate: '2026-11-24T22:08:44.530Z'
+  - url: HaolamHaisraeli-Setup-1.0.40.exe
+    sha512: 4UHmXX/WiMqGuyv/3HOvSSHKygocdGn7PlnSnGz9uZ3CQ+arXEkbKJjFVBUlH+vRHPwl3ZwCaCb2FwrpllKqhg==
+    size: 113889743
+path: HaolamHaisraeli-Setup-1.0.40.exe
+sha512: 4UHmXX/WiMqGuyv/3HOvSSHKygocdGn7PlnSnGz9uZ3CQ+arXEkbKJjFVBUlH+vRHPwl3ZwCaCb2FwrpllKqhg==
+releaseDate: '2026-11-24T22:33:09.892Z'
